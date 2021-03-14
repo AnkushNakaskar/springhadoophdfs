@@ -1,4 +1,4 @@
-#This project is hadoop(inserting files into HDFS)
+#This project is spring hadoop(inserting files into HDFS)
 * Learn basics of Hadoop via Tutorials 
     * https://www.youtube.com/watch?v=1vbXmCrkT3Y&t=4828s
     * https://data-flair.training/blogs/hadoop-hdfs-architecture/

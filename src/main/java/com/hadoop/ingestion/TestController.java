@@ -1,11 +1,17 @@
 package com.hadoop.ingestion;
 
 import com.hadoop.ingestion.configuration.ProjectConfig;
+import com.hadoop.ingestion.hdfs.HdfsFileAccess;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.core.io.Resource;
+import org.springframework.core.io.ResourceLoader;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.io.IOException;
 
 /**
  * @author ankush.nakaskar
@@ -21,9 +27,19 @@ public class TestController {
     @Autowired
     org.apache.hadoop.conf.Configuration hadoopConfiguration;
 
-    @GetMapping("/test")
-    public ResponseEntity<String> getStatus() {
 
+
+    @Autowired
+    private HdfsFileAccess fileAccess;
+
+
+    @Autowired
+    ConfigurableApplicationContext ctx;
+
+
+    @GetMapping("/test")
+    public ResponseEntity<String> getStatus() throws IOException {
+        fileAccess.writeFile("myTemplate.txt");
         return new ResponseEntity<>("Success..!!!"+projectConfig.getServiceMapping(), HttpStatus.OK);
     }
 }

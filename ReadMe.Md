@@ -18,6 +18,8 @@
     	-> https://www.javatpoint.com/mapreduce-word-count-example
 *   Used Spring to handle hadoop processing
     * https://docs.spring.io/spring-hadoop/docs/current/reference/html/springandhadoop-config.html
+* Follow this 
+    * https://github.com/danielyinanc/hdfs-spring-stream/tree/master/src/main/java/com/rainmakeross/tutorial/hdfs/springboot    
        				
     
     

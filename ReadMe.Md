@@ -28,4 +28,29 @@
     * You can test the Application is running using : http://localhost:9098/test
     * This example is for HDFS write file
     * You can browse files here : http://localhost:9870/explorer.html#/
+    * Sample log from application running  
+    ```
+    2021-10-02 13:14:39,077 INFO  [main] web.EndpointLinksResolver (EndpointLinksResolver.java:<init>(58)) - Exposing 4 endpoint(s) beneath base path '/actuator'
+    2021-10-02 13:14:39,157 INFO  [main] tomcat.TomcatWebServer (TomcatWebServer.java:start(220)) - Tomcat started on port(s): 9098 (http) with context path ''
+    2021-10-02 13:14:39,171 INFO  [main] ingestion.SpringhadoopdemoApplication (StartupInfoLogger.java:logStarted(61)) - Started SpringhadoopdemoApplication in 3.601 seconds (JVM running for 4.023)
+    Ankush....
+    Oct 02, 2021 1:14:48 PM org.apache.catalina.core.ApplicationContext log
+    INFO: Initializing Spring DispatcherServlet 'dispatcherServlet'
+    2021-10-02 13:14:48,411 INFO  [http-nio-9098-exec-1] servlet.DispatcherServlet (FrameworkServlet.java:initServletBean(525)) - Initializing Servlet 'dispatcherServlet'
+    2021-10-02 13:14:48,412 INFO  [http-nio-9098-exec-1] servlet.DispatcherServlet (FrameworkServlet.java:initServletBean(547)) - Completed initialization in 0 ms
+    hdfs://localhost:9000/user/ankush.nakaskar
+    Lines.... hd.fs=hdfs://localhost:9000
+    Lines.... hd.rm=localhost:8032
+    Lines.... hd.jh=localhost:10020
+    Lines.... 
+    Lines.... wordcount.input.path=/user/gutenberg/input/word/
+    Lines.... wordcount.output.path=/user/gutenberg/output/word/
+    Lines.... localSourceFile=data/nietzsche-chapter-1.txt
+    Lines.... server.port=9098
+    Lines.... spring.hadoop.config.fs.defaultFS=hdfs://localhost:9000
+    ...bytes written: [ ]
+    ...bytes written: [ ]
+
+    ```
+    
     

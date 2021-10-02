@@ -6,7 +6,7 @@
         http://www.springframework.org/schema/hadoop http://www.springframework.org/schema/hadoop/spring-hadoop.xsd">
 
     <hdp:configuration>
-        fs.defaultFS=hdfs://localhost:8020
+        fs.defaultFS=hdfs://localhost:9000
         hadoop.tmp.dir=/tmp/hadoop
         electric=sea
     </hdp:configuration>

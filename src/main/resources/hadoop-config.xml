@@ -14,8 +14,10 @@
 <!--    <hdp:file-system />-->
 <!--    <hdp:resource-loader id="loaderWithUser" user="ankush.nakaskar" uri="hdfs://localhost:8020" />-->
 
+    <hdp:job-runner id="myjob-runner"  job-ref="mr-job" run-at-startup="true"/>
+
     <hdp:job id="mr-job"
-             input-path="/input/" output-path="/ouput/"
+             input-path="/user/jj/stdout-test.txt" output-path="/user/jj/dir/test4"
              mapper="com.hadoop.ingestion.hadoop.TokenizerMapper"
              reducer="com.hadoop.ingestion.hadoop.IntSumReducer"/>
 </beans>

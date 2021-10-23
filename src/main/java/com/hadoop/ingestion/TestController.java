@@ -39,7 +39,7 @@ public class TestController {
 
     @GetMapping("/test")
     public ResponseEntity<String> getStatus() throws IOException {
-        fileAccess.writeFile("application.properties");
+        fileAccess.writeFile("inputmyTemplate.txt");
         return new ResponseEntity<>("Success..!!!"+projectConfig.getServiceMapping(), HttpStatus.OK);
     }
 }

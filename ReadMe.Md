@@ -23,7 +23,8 @@
        				
 * How to execute programe
     * Run cmd      ```mvn clean install -Plocal  -U idea:idea```
-    * Run Jar      ``` java -jar target/springhadoopdemo-0.0.1-SNAPSHOT.jar ```
+    * Run Jar      ``` hadoop jar target/springhadoopdemo-0.0.1-SNAPSHOT.jar mr-job ```
+    * Hadoop version should be 3.3.1
     * Before all this, make sure, you have hadoop running on local system. Follow Medium blog to install and running hadoop.
     * You can test the Application is running using : http://localhost:9098/test
     * This example is for HDFS write file

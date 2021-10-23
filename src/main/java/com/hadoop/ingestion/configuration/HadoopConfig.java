@@ -21,6 +21,9 @@ public class HadoopConfig {
         conf.set("fs.default.name", "hdfs://localhost:9000");
         conf.set("dfs.permissions", "false");
         conf.set("user","ankush.nakaskar");
+        conf.set("mapreduce.jobtracker.address", "localhost:54311");
+        conf.set("mapreduce.framework.name", "yarn");
+        conf.set("yarn.resourcemanager.address", "localhost:8032");
         return FileSystem.get(conf);
     }
 

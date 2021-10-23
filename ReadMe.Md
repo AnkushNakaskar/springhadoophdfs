@@ -28,6 +28,7 @@
     * You can test the Application is running using : http://localhost:9098/test
     * This example is for HDFS write file
     * You can browse files here : http://localhost:9870/explorer.html#/
+    * You need to use the namenode format if above url is not accessible 
     * Sample log from application running  
     ```
     2021-10-02 13:14:39,077 INFO  [main] web.EndpointLinksResolver (EndpointLinksResolver.java:<init>(58)) - Exposing 4 endpoint(s) beneath base path '/actuator'

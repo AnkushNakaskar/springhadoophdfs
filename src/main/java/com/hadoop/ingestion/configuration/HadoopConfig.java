@@ -18,7 +18,8 @@ public class HadoopConfig {
     @Bean
     public FileSystem createFileSystem() throws IOException {
         org.apache.hadoop.conf.Configuration conf = new org.apache.hadoop.conf.Configuration();
-        conf.set("fs.default.name", "hdfs://localhost:9000");
+//        conf.set("fs.default.name", "hdfs://localhost:9000");
+        conf.set("fs.defaultFS", "hdfs://localhost:9000");
         conf.set("dfs.permissions", "false");
         conf.set("user","ankush.nakaskar");
         conf.set("mapreduce.jobtracker.address", "localhost:54311");

@@ -17,7 +17,8 @@
     <hdp:job-runner id="myjob-runner"  job-ref="mr-job" run-at-startup="true"/>
 
     <hdp:job id="mr-job"
-             input-path="/user/jj/stdout-test.txt" output-path="/user/jj/dir/test4"
+             input-path="/user/jj/stdout-test.txt" output-path="/user/jj/dir/tes3" jar-by-class="com.hadoop.ingestion.SpringhadoopdemoApplication"
              mapper="com.hadoop.ingestion.hadoop.TokenizerMapper"
              reducer="com.hadoop.ingestion.hadoop.IntSumReducer"/>
+
 </beans>

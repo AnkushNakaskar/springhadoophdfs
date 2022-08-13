@@ -3,6 +3,9 @@
     * https://www.youtube.com/watch?v=1vbXmCrkT3Y&t=4828s
     * https://data-flair.training/blogs/hadoop-hdfs-architecture/
     * https://data-flair.training/blogs/hadoop-tutorials-home/
+    * https://www.netjstech.com/2018/07/shuffle-and-sort-phases-hadoop-mapreduce.html
+      * This link explain the map reduce phases in details.
+      * Read(Split) -> Map -> Combine -> Sort-> Partition -> Shuffle -> Sort-> Reduce -> OutPut
 * First we should install hadoop on local system
     Hadoop
     1. Installing Hadoop

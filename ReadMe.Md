@@ -6,6 +6,7 @@
     * https://www.netjstech.com/2018/07/shuffle-and-sort-phases-hadoop-mapreduce.html
       * This link explain the map reduce phases in details.
       * Read(Split) -> Map -> Combine -> Sort-> Partition -> Shuffle -> Sort-> Reduce -> OutPut
+      * Reducer instance make Http API calls to get the local disk files from Mapper Instance : this is why Map reduce is not good in performance than spark
 * First we should install hadoop on local system
     Hadoop
     1. Installing Hadoop
